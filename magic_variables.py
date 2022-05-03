@@ -1,0 +1,30 @@
+KEYBOARD = {
+    "a":"grey",
+    "b":"grey",
+    "c":"grey",
+    "d":"grey",
+    "e":"grey",
+    "f":"grey",
+    "g":"grey",
+    "h":"grey",
+    "i":"grey",
+    "j":"grey",
+    "k":"grey",
+    "l":"grey",
+    "m":"grey",
+    "n":"grey",
+    "o":"grey",
+    "p":"grey",
+    "q":"grey",
+    "r":"grey",
+    "s":"grey",
+    "t":"grey",
+    "u":"grey",
+    "v":"grey",
+    "w":"grey",
+    "x":"grey",
+    "y":"grey",
+    "z":"grey"
+}
+ANSWERS_COUNT = 2315
+GUESSES_ALLOWED = 15
