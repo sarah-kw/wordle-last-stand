@@ -9,18 +9,6 @@ import random
 def make_player_list():
     return random.sample(ANSWERS, ANSWERS_COUNT)
 
-# def play_word(target):
-#     #user_guess = get_user_guess()
-#     word_guessed = False
-#     while not word_guessed:
-#         user_word = get_user_guess()
-#         output = check_guess(target, user_word)
-#         print(output)
-#         if output == ["g"] * 5:
-#             word_guessed = True
-#     print("congrats!~")
-#     return True
-
 def word_transition(guessed_word, new_word):
     transition_tiles = check_guess(new_word, guessed_word)
     game_keyboard = deepcopy(KEYBOARD)
@@ -28,11 +16,10 @@ def word_transition(guessed_word, new_word):
     print(f"{guessed_word} gives you {transition_tiles}")
     return game_keyboard
 
-#play_word("hello")
 
 def game():
-    #game_words = make_player_list()
-    game_words = ["hello", "smile", "acorn", "twist"]
+    game_words = make_player_list()
+    #game_words = ["hello", "smile", "acorn", "twist"]
     guesses_left = GUESSES_ALLOWED
     words_solved = 0
     print("Welcome to Wordle: the last stand")
